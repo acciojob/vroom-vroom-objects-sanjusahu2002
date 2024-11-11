@@ -1,5 +1,5 @@
 // Complete the js code
-function Car(make, model) {
+function Car(make:string, model:string) {
 	this.make = make;
     this.model = model;
 }
@@ -7,7 +7,7 @@ Car.prototype.getMakeModel = function(){
     return `${this.make} ${this.model}`;
 };
 
-function SportsCar(make, model, topSpeed) {
+function SportsCar(make:string, model:string, topSpeed:number) {
 	Car.call(this,make,model);// it inherits property from car
     this.topSpeed = topSpeed;
 }
