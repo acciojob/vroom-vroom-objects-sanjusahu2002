@@ -12,7 +12,7 @@ function SportsCar(make, model, topSpeed) {
     this.topSpeed = topSpeed;
 }
 SportsCar.prototype = Object.create(Car.prototype); // inherits car prototype in sportscar prototype.
-SportsCar.prototype.constructor = SportsCar;
+
 
 SportsCar.prototype.getTopSpeed = function (){
             return `${this.topSpeed}`;
