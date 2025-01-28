@@ -15,7 +15,7 @@ SportsCar.prototype = Object.create(Car.prototype); // inherits car prototype in
 
 
 SportsCar.prototype.getTopSpeed = function (){
-            return `${this.topSpeed}`;
+            return this.topSpeed;
 }
 // Do not change the code below
 window.Car = Car;
